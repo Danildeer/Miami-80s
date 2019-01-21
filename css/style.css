@@ -1,0 +1,215 @@
+* {	
+	
+	margin: 0;
+
+}
+
+body {
+	
+	height: 1200px;
+	background: linear-gradient(to bottom, #FBF266,#F4D666, #FF6272, #FF7A81);
+
+}
+
+body > div {
+    
+    margin: 100px 100px;
+    width: 200px;
+    height: 100px;
+    background: #000;
+    color: #7FFF00;
+    font-family: Arial;
+    font-weight: 500;
+    font-size: 3.5em;
+    text-align: center;
+    line-height: 100px;
+    transition: all 0.9s ease;
+  
+  }
+
+footer {
+   
+   background: linear-gradient(to bottom, #B6CF4F,#E6EF23);
+   border-bottom: 4px groove #F077D5;
+   bottom: -861px;
+   height: 186px;
+   font-size: 12px;
+   position: relative;
+   z-index: -1;
+
+}
+
+header {
+    
+    height: 125px;
+    width: 100%;
+    background: linear-gradient(to bottom, #B6CF4F,#E6EF23);
+    border-bottom: 4px groove #F077D5;
+
+}
+
+
+header img {
+	
+	float: center;
+	font-family: "Miami";
+	font-size: 35px;
+	color: red;
+    
+}
+
+header img{
+
+	height: 125px;
+	width: 165px;
+	float: left;
+}
+
+header img picture {
+    
+    width: 100%;
+    height: 100%;
+    background-color: 1px solid green;
+}
+
+p {
+	
+	text-align: center;
+	/*border-color: red;*/
+}
+
+h1 {
+	
+	text-align: center;
+
+}
+
+.sliderA {
+
+    width: 100%;
+    height: 250px;
+    border: 1px solid #888;
+    position: relative;
+    text-align: center;
+}
+
+.sliderA > input {
+    
+    display: none;
+   
+   }
+
+.sliderA > input + label {
+   
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 8px;
+    background: rgba(90, 90, 90, 0.8);
+    border: 2px solid rgba(190, 190, 190, 0.8);
+
+    cursor: pointer;
+
+    z-index: 100;
+    position: relative;
+
+    margin-right: 4px;
+    top: 90%;
+
+    transition: background 0.8s ease-out 0s;
+   
+   }
+
+
+.sliderA > input + label:hover {
+    
+    background: rgba(250, 250, 250, 0.8);
+    
+    }
+
+.sliderA > input:checked + label {
+    
+    background: rgba(220, 220, 220, 0.8);
+   
+   }
+.sliderA > div {
+    
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 0;
+    
+    }
+
+.sliderA > div {
+    
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.8s ease-out 0.1s, visibility 0.1s ease-out 0.9s;
+    
+    }
+
+    .sliderA > input:checked + label + div {
+        
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.8s ease-out 0.1s, visibility 0.1s ease-out 0s;
+    
+    }
+
+.sliderA > input + label + div + label {
+        
+        display: none;
+    
+    }
+
+/* 
+
+.sliderA > input:checked + label + div + label {
+    
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 50; 
+    
+    } 
+
+*/
+
+.rotate:hover {
+    
+    -webkit-transform: rotateZ(-180deg);
+    -ms-transform: rotateZ(-180deg);
+    transform: rotateZ(-180deg);
+  
+  }
+
+.boys:hover {
+    
+    -webkit-transform: rotateZ(-180deg);
+    -ms-transform: rotateZ(-180deg);
+    transform: rotateZ(-180deg);
+    float: left;
+  
+  }
+
+.girls:hover {
+    
+    -webkit-transform: rotateZ(-180deg);
+    -ms-transform: rotateZ(-180deg);
+    transform: rotateZ(-180deg);
+  
+  }
+
+.three:hover {
+  
+    text-shadow: 1px 1px #298A08, 2px 2px #298A08, 3px 3px #298A08, 5px 5px #298A08;
+    -webkit-transform: translateX(5px);
+    transform: translateY(-5px);
+
+}
